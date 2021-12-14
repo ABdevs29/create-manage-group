@@ -236,7 +236,7 @@ header {
   top: 57px;
   left: 220px;
   right: 0px;
-  width: calc(100vw - 280px);
+  width: calc(100vw - 240px);
 }
 .container-all-group {
   margin-top: 20px;
@@ -319,7 +319,7 @@ header {
   background-color: #ffe3f2;
 }
 .group-details-container {
-  width: calc(100vw - 297px);
+  width: calc(100vw - 240px);
   height: calc(100vh - 230px);
   overflow-y: hidden;
   margin-top: 1rem;
