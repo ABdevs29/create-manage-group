@@ -275,6 +275,8 @@ header {
   overflow-x: scroll;
   gap: 0.5rem;
   margin-left: 1rem;
+  scrollbar-color: #e9a3c9 white;
+  scrollbar-width: thin;
 }
 .groups-card {
   display: flex;
@@ -334,6 +336,8 @@ header {
 .groups-bottom-portion {
   overflow-y: scroll;
   height: calc(100vh - 350px);
+  scrollbar-color: #e9a3c9 white;
+  scrollbar-width: thin;
 }
 .group-details-banner {
   display: flex;
