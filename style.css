@@ -353,6 +353,9 @@ header {
   border: 1px solid #dee3e6;
   font-size: 0.75rem;
 }
+#search-field:focus {
+  outline: none;
+}
 .new-group-btn {
   background-color: #ea168b;
   border: 1px solid #ea168b;
