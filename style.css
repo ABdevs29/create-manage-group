@@ -504,6 +504,17 @@ header {
   color: #ea168b;
   cursor: pointer;
 }
+::-webkit-scrollbar {
+  height: .7rem; 
+  width: .5rem;            
+  border: 1px solid #e4b8d0;
+  border-radius: 18px;
+
+}
+::-webkit-scrollbar-thumb {
+  background: #e9a3c9;
+  border-radius: 18px;
+}
 
 @media only screen and (min-width: 2000px) {
   html {
@@ -581,11 +592,6 @@ header {
   width: 24px;
   height: 24px;
 }
-/* ::-webkit-scrollbar {
-  height: .7rem; 
-  width: .5rem;            
-  border: 1px solid #e4b8d0;
-} */
 }
 
 @media only screen and (max-width: 1140px) {
@@ -664,7 +670,8 @@ header {
   .groups-cards-container {
     height: 12rem;
     flex-direction: column;
-    overflow-x: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     padding-right: 0;
   }
   .groups-card {
