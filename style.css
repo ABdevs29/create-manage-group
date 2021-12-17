@@ -544,12 +544,12 @@ header {
   border-radius: 18px;
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2160px) {
   html {
     font-size: 28px;
   }
   body {
-    width: 2200px;
+    width: 2160px;
     margin: auto;
     align-content: center;
     overflow-y: hidden;
