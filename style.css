@@ -718,7 +718,7 @@ header {
     gap: 1rem;
   }
   #search-field {
-    width: 16rem;
+    width: 100%;
   }
   .new-group-btn {
     width: 7.5rem;
