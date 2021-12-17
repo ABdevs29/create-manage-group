@@ -711,6 +711,7 @@ header {
     gap: 0.5rem;
     flex-direction: column;
     align-items: start;
+    width: 100%
   }
   .group-details-banner div {
     display: flex;
