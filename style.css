@@ -745,6 +745,7 @@ header {
     gap: 0.5rem;
     flex-direction: column;
     align-items: start;
+    padding-left: 1rem;
   }
   .group-details-banner div {
     display: flex;
@@ -783,7 +784,7 @@ header {
     display: none;
   }
   .container-recommended-groups {
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
   .footer {
