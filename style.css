@@ -68,6 +68,7 @@ header {
 .profile-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .profile {
   display: flex;
@@ -126,9 +127,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 0.625rem 19.25rem 1.5rem;
-    gap: 1.875rem !important;
-    height: 25rem;
+    padding: 1rem 0.625rem 7.25rem 1.5rem;
+    height: 23rem;
   }
   .nav-bottom-btns {
     display: flex;
@@ -157,6 +157,7 @@ header {
   .nav-content {
     width: 11.1875rem;
     height: 1.8125rem;
+    margin-bottom: 1rem;
     opacity: 0.4;
     font-size: 0.75rem;
     font-weight: normal;
@@ -170,6 +171,7 @@ header {
   .divider {
     width: 11.2rem;
     height: 0.083rem;
+    margin-bottom: 1rem;
     border: solid 1px #f2f4f8;
   }
   .nav-list-section {
@@ -427,10 +429,10 @@ header {
   align-items: center;
 }
 .groups-table-1 h5:nth-child(3) {
-  text-align: center;
+  justify-content: center;
 }
 .groups-table-1 h5:nth-child(4) {
-  text-align: center;
+  justify-content: center;
 }
 .groups-table-2-group-owner {
   text-align: center;
@@ -548,8 +550,20 @@ header {
   html {
     font-size: 28px;
   }
+}
+
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
   body {
-    width: 2160px;
+    width: 1600px;
     margin: auto;
     align-content: center;
     overflow-y: hidden;
@@ -605,6 +619,12 @@ header {
   height: 24px;
 }
 }
+
+  @media only screen and (min-height: 800px) {
+    .groups-bottom-portion {
+      overflow-y: hidden;
+    }
+  }
 
 @media only screen and (max-width: 1140px) {
   .groups-cards-container {
@@ -666,11 +686,15 @@ header {
     top: 57px;
     left: 0px;
     right: 0px;
-    margin-left: 1rem;
-    width: 90vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+  .bell {
+    margin-right: 0rem;
   }
   .group-details-container {
-    width: 80vw;
+    width: 100%;
   }
   .groups-bottom-portion {
     overflow-y: scroll;
@@ -711,13 +735,12 @@ header {
     gap: 0.5rem;
     flex-direction: column;
     align-items: start;
-
   }
   .group-details-banner div {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100%
+    width: 100%;
   }
   #search-field {
     width: 100%;
