@@ -358,7 +358,7 @@ header {
   background-color: #ffe3f2;
 }
 .group-details-container {
-/*   width: calc(100vw - 257px); */
+  width: calc(100vw - 260px);
   height: calc(100vh - 260px);
   overflow-y: hidden;
   border-radius: 5px;
