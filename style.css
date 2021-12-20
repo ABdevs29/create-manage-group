@@ -699,11 +699,13 @@ header {
     display: none;
   }
   header {
+    position: -webkit-sticky;
     position: sticky;
+    top: 0;
   }
   .content-container {
-    position: absolute;
-    top: 57px;
+    position: relative;
+    top: 0px;
     left: 0px;
     right: 0px;
     padding-left: 2rem;
