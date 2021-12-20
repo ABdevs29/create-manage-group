@@ -271,11 +271,11 @@ header {
   top: 57px;
   left: 220px;
   right: 0px;
-  width: calc(100vw - 240px);
+  width: calc(100vw - 220px);
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 1.25rem 0 1.25rem 1.25rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
   gap: 1rem;
 }
 .container-all-group {
@@ -358,7 +358,7 @@ header {
   background-color: #ffe3f2;
 }
 .group-details-container {
-  width: calc(100vw - 257px);
+/*   width: calc(100vw - 257px); */
   height: calc(100vh - 260px);
   overflow-y: hidden;
   border-radius: 5px;
