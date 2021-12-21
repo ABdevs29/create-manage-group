@@ -188,13 +188,14 @@ header {
   .nav-list h5 {
     font-size: 0.8125rem;
   }
-   .nav-list-items-1 {
+  .nav-list-items-1 {
     height: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     color: #cbcbcb;
+
   }
   .nav-list-items-banners-1 {
     text-align: center;
@@ -206,6 +207,7 @@ header {
   }
   .nav-list-items-1:hover {
     color: #4a4a4a;
+
   }
   .nav-list-items-1:hover .nav-list-items-banners-1 {
     background-color: #ea168b;
@@ -359,7 +361,7 @@ header {
 }
 .groups-bottom-portion {
   overflow-y: scroll;
-  height: calc(100vh - 410px);
+  height: calc(100vh - 26.875rem);
   scrollbar-color: #e9a3c9 white;
   scrollbar-width: thin;
 }
@@ -472,7 +474,11 @@ header {
   color: #e20074;
   text-decoration: underline;
   font-size: 0.75rem;
+  width: 13rem;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .groups-table-2-group-owner {
   color: #4a4a4a;
@@ -521,6 +527,9 @@ header {
 }
 .goto-input {
   width: 2.5rem;
+}
+.goto-input:focus {
+  outline: none;
 }
 .goto-page-num:hover {
   color: #ea168b;
@@ -574,6 +583,7 @@ header {
   }
   .group-details-container {
     width: auto;
+    height: auto;
   }
   .container-all-group {
     width: auto;
@@ -594,9 +604,6 @@ header {
     height: 200px;
     width: 200px;
   }
-  .groups-table-1 h5 span {
-    margin-left: 1.9rem;
-}
 .groups-cards-container {
   overflow-x: scroll;
   padding-right: 4rem;
@@ -606,8 +613,6 @@ header {
   height: 24px;
 }
 }
-
-
 
 @media only screen and (min-width: 1800px) {
   html {
@@ -631,13 +636,22 @@ header {
   html {
     font-size: 28px;
   }
+  .groups-bottom-portion {
+    overflow-y: hidden;
+    height: fit-content;
+  }
+  .group-details-container {
+    height: 100vh;  
+  }
+  .groups-table-2-group-name-text {
+    width: 9rem;
+  }
 }
 @media only screen and (min-width: 4500px) {
   html {
     font-size: 32px;
   }
 }
-
 @media only screen and (max-width: 1140px) {
   .groups-cards-container {
     padding-right: 10rem;
@@ -678,11 +692,20 @@ header {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  
+}
+@media only screen and (width: 1024px) and (height: 1366px) { /*changes*/
+  .groups-bottom-portion {
+    height: fit-content; 
+  }
 }
 
 @media only screen and (max-width: 770px) {
   .groups-bottom-portion {
-    height: calc(100vh - 450px);
+    height: fit-content;
+  }
+  .group-details-container {
+    height: fit-content;
   }
 }
 
@@ -711,8 +734,7 @@ header {
     width: 100%;
   }
   .groups-bottom-portion {
-    overflow-y: scroll;
-    height: calc(100vh - 350px);
+    overflow-y: hidden;
   }
   .user-group-icon {
     display: none;
@@ -791,8 +813,4 @@ header {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  .footer {
-    margin: 0.5rem 1rem 7rem;
-  }
-
 }
